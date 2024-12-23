@@ -39,7 +39,7 @@ const teamMembers = [
     },
     {
         name: "Paras Shah",
-        role: "Vice Chairperson",
+        role: "ACM Student Secretary",
         image: "/paras.png",
         socialLinks: {
             twitter: "https://x.com/ParasShah_18?t=yxKPuGupEEpHTAAljbOyVw&s=08",
@@ -49,7 +49,7 @@ const teamMembers = [
     },
     {
         name: "Shrey Shah",
-        role: "Technical Head",
+        role: "ACM Student Webmaster",
         image: "/shrey.jpeg",
         socialLinks: {
             twitter: "https://x.com/Shrey0610",
@@ -59,7 +59,7 @@ const teamMembers = [
     },
     {
         name: "Dev Sanghavi",
-        role: "Event Coordinator",
+        role: "ACM Student Treasurer",
         image: "/dev.jpeg",
         socialLinks: {
             twitter: "https://x.com/Dv04Dshttps://x.com/Dv04Ds",
@@ -69,7 +69,7 @@ const teamMembers = [
     },
     {
         name: "Harshita Bhambhani",
-        role: "Web Master",
+        role: "Student Chair",
         image: "/Harshita.jpg",
         socialLinks: {
             twitter: "https://x.com/harshitab16",
@@ -79,17 +79,16 @@ const teamMembers = [
     },
     {
         name: "Nidhi Bolia",
-        role: "Content Lead",
+        role: "Vice Chair",
         image: "/nidhi.png",
         socialLinks: {
-            twitter: "https://twitter.com/davidblack",
-            linkedin: "https://linkedin.com/in/davidblack",
-            gmail: "mailto:davidblack@gmail.com",
+            linkedin: "https://www.linkedin.com/in/nidhibolia/",
+            gmail: "mailto:nidhibolia.cse21@aii.ac.in",
         },
     },
     {
         name: "Khushi Bansal",
-        role: "Design Head",
+        role: "Secretary",
         image: "/khushi_profile.jpeg",
         socialLinks: {
             twitter: "https://x.com/khushibansalll",
@@ -99,7 +98,7 @@ const teamMembers = [
     },
     {
         name: "Ananya Sanghavi",
-        role: "Design Head",
+        role: "Treasurer",
         image: "/ananya.jpeg",
         socialLinks: {
             twitter: "https://x.com/buymeadog_",
@@ -109,7 +108,7 @@ const teamMembers = [
     },
     {
         name: "Vidhi Patel",
-        role: "Design Head",
+        role: "Webmaster",
         image: "/vidhi.png",
         socialLinks: {
             linkedin: "https://www.linkedin.com/in/vidhi-patel-627962254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
