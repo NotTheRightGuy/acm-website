@@ -1,14 +1,9 @@
 export const footerConfig = {
     about: {
-        title: "ACM Student Chapter",
+        title: "ACM Student & ACM-W Chapter",
         description:
             "Empowering students through technology, innovation, and collaborative learning.",
         socialLinks: [
-            {
-                name: "GitHub",
-                url: "https://github.com/adani-acm",
-                icon: "FaGithub",
-            },
             {
                 name: "LinkedIn",
                 url: "https://linkedin.com/company/adani-acm",

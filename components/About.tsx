@@ -17,7 +17,7 @@ export default function About() {
                             Innovation
                         </h1>
                         <p className="mt-4 md:mt-6 text-[#333] text-sm md:text-base">
-                            The ACM Student Chapter at our institution is a
+                            The ACM Chapter at our institution is a
                             dynamic hub for technology enthusiasts. We foster
                             learning through hands-on workshops, expert-led
                             sessions, and competitive programming challenges.
