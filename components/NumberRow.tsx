@@ -28,7 +28,7 @@ export default function NumberRow() {
     return (
         <div
             ref={componentRef}
-            className="mt-10 w-full grid grid-cols-4 *:border gap-8 *:rounded-lg *:shadow-md *:px-8 *:py-6 mb-10"
+            className="mt-8 md:mt-10 w-full grid grid-cols-2 md:grid-cols-4 *:border gap-4 md:gap-8 *:rounded-lg *:shadow-md *:px-4 md:*:px-8 *:py-4 md:*:py-6 mb-8 md:mb-10"
         >
             <div className="text-center">
                 <NumberFlow

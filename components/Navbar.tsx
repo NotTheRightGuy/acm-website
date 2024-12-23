@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import { navTitle } from "@/constants/hero";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
                                 className="mr-2"
                             />
                             <span className="font-semibold text-lg  text-gray-600">
-                                Adani University
+                                {navTitle}
                             </span>
                         </Link>
                     </div>
@@ -35,6 +36,7 @@ const Navbar = () => {
                             <NavLink href="/">Home</NavLink>
                             <NavLink href="#about">About Us</NavLink>
                             <NavLink href="#events">Events</NavLink>
+                            <NavLink href="#testimonials">Testimonials</NavLink>
                             <NavLink href="#team">Our Team</NavLink>
                             <NavLink href="#contact">Contact</NavLink>
                         </div>
@@ -81,6 +83,9 @@ const Navbar = () => {
                         </NavLink>
                         <NavLink href="#events" onClick={toggleMenu}>
                             Events
+                        </NavLink>
+                        <NavLink href="#testimonials" onClick={toggleMenu}>
+                            Testimonials
                         </NavLink>
                         <NavLink href="#team" onClick={toggleMenu}>
                             Our Team

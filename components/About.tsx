@@ -24,17 +24,17 @@ const images = [
 export default function About() {
     return (
         <Container>
-            <div className="mt-24" id="about">
-                <div className="grid grid-cols-2">
-                    <div className="">
-                        <h3 className=" font-semibold text-2xl">
+            <div className="mt-12 md:mt-24" id="about">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="px-4 md:px-0">
+                        <h3 className="font-semibold text-xl md:text-2xl">
                             What is it all about?
                         </h3>
-                        <h1 className="font-bold font-fami   text-4xl mt-2">
+                        <h1 className="font-bold font-fami text-3xl md:text-4xl mt-2">
                             Empowering Students Through Technology and
                             Innovation
                         </h1>
-                        <p className="mt-6 text-[#333]">
+                        <p className="mt-4 md:mt-6 text-[#333] text-sm md:text-base">
                             The ACM Student Chapter at our institution is a
                             dynamic hub for technology enthusiasts. We foster
                             learning through hands-on workshops, expert-led
@@ -73,7 +73,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="pl-32 h-[500px] overflow-hidden">
+                    <div className="hidden md:block pl-8 lg:pl-32 h-[500px] overflow-hidden">
                         <Marquee
                             pauseOnHover
                             vertical

@@ -1,11 +1,12 @@
 "use client";
 import InteractiveHoverButton from "./ui/interactive-hover-button";
+import { heroImage } from "@/constants/hero";
 
 export default function Hero() {
     return (
-        <div className="w-full flex-1 px-12">
+        <div className="w-full flex-1 lg:px-12 px-6">
             <div className="grid lg:grid-cols-2 h-full grid-cols-1">
-                <div className="lg:pt-36 pt-12">
+                <div className="lg:pt-36 pt-6">
                     <h1 className="lg:text-6xl sm:text-4xl text-3xl font-bold font-fami leading-snug">
                         Welcome to the Adani University
                         <span className="bg-blue-200 pr-2 mx-2 sm:text-5xl text-3xl border border-dashed border-blue-500">
@@ -33,7 +34,7 @@ export default function Hero() {
                 </div>
                 <div className="py-12 h-full w-full ">
                     <img
-                        src="/hero-placeholder.avif"
+                        src={heroImage}
                         alt="Image depicting students participating in Computing activities"
                         className="h-full w-full object-cover border-dashed border-2 border-blue-500"
                     />
