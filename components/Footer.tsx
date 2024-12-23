@@ -1,44 +1,43 @@
 import Container from "./Container";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { footerConfig } from "@/constants/footer";
+
+const iconMap = {
+    FaGithub,
+    FaLinkedin,
+    FaTwitter,
+    FaInstagram,
+};
 
 export default function Footer() {
     return (
         <footer className="bg-gray-50 py-12 md:py-16 border-t border-dashed px-4 md:px-0">
             <Container>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+                    {/* About Section */}
                     <div className="col-span-1">
                         <h3 className="font-bold text-xl mb-4">
-                            ACM Student Chapter
+                            {footerConfig.about.title}
                         </h3>
                         <p className="text-gray-600 text-sm">
-                            Empowering students through technology, innovation,
-                            and collaborative learning.
+                            {footerConfig.about.description}
                         </p>
                         <div className="flex gap-4 mt-6">
-                            <a
-                                href="#"
-                                className="text-gray-600 hover:text-blue-500 transition-colors"
-                            >
-                                <FaGithub size={20} />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-gray-600 hover:text-blue-500 transition-colors"
-                            >
-                                <FaLinkedin size={20} />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-gray-600 hover:text-blue-500 transition-colors"
-                            >
-                                <FaTwitter size={20} />
-                            </a>
-                            <a
-                                href="#"
-                                className="text-gray-600 hover:text-blue-500 transition-colors"
-                            >
-                                <FaInstagram size={20} />
-                            </a>
+                            {footerConfig.about.socialLinks.map((link) => {
+                                const Icon =
+                                    iconMap[link.icon as keyof typeof iconMap];
+                                return (
+                                    <a
+                                        key={link.name}
+                                        href={link.url}
+                                        className="text-gray-600 hover:text-blue-500 transition-colors"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <Icon size={20} />
+                                    </a>
+                                );
+                            })}
                         </div>
                     </div>
 
@@ -46,18 +45,16 @@ export default function Footer() {
                     <div className="col-span-1">
                         <h3 className="font-bold text-xl mb-4">Quick Links</h3>
                         <ul className="space-y-2">
-                            {["About", "Events", "Team", "Contact"].map(
-                                (link) => (
-                                    <li key={link}>
-                                        <a
-                                            href={`#${link.toLowerCase()}`}
-                                            className="text-gray-600 hover:text-blue-500 transition-colors"
-                                        >
-                                            {link}
-                                        </a>
-                                    </li>
-                                )
-                            )}
+                            {footerConfig.quickLinks.map((link) => (
+                                <li key={link.name}>
+                                    <a
+                                        href={link.href}
+                                        className="text-gray-600 hover:text-blue-500 transition-colors"
+                                    >
+                                        {link.name}
+                                    </a>
+                                </li>
+                            ))}
                         </ul>
                     </div>
 
@@ -65,17 +62,19 @@ export default function Footer() {
                     <div className="col-span-1">
                         <h3 className="font-bold text-xl mb-4">Contact Info</h3>
                         <ul className="space-y-2 text-gray-600">
-                            <li>Email: acm@example.com</li>
-                            <li>Phone: +91 1234567890</li>
-                            <li>Location: Your College Name</li>
+                            <li>Email: {footerConfig.contact.email}</li>
+                            <li>Phone: {footerConfig.contact.phone}</li>
+                            <li>Location: {footerConfig.contact.location}</li>
                         </ul>
                     </div>
 
                     {/* Newsletter */}
                     <div className="col-span-1">
-                        <h3 className="font-bold text-xl mb-4">Newsletter</h3>
+                        <h3 className="font-bold text-xl mb-4">
+                            {footerConfig.newsletter.title}
+                        </h3>
                         <p className="text-gray-600 text-sm mb-4">
-                            Subscribe to our newsletter for updates.
+                            {footerConfig.newsletter.description}
                         </p>
                         <form className="flex gap-2">
                             <input

@@ -1,25 +1,7 @@
 import Container from "./Container";
 import Marquee from "./ui/marquee";
 import MarqueImage from "./MarqueImage";
-
-const images = [
-    {
-        src: "/1.avif",
-        alt: "Image 1",
-    },
-    {
-        src: "/2.avif",
-        alt: "Image 2",
-    },
-    {
-        src: "/3.avif",
-        alt: "Image 3",
-    },
-    {
-        src: "/4.avif",
-        alt: "Image 4",
-    },
-];
+import { aboutImage } from "@/constants/about";
 
 export default function About() {
     return (
@@ -73,13 +55,13 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="hidden md:block pl-8 lg:pl-32 h-[500px] overflow-hidden">
+                    <div className="lg:pl-32 hidden lg:block h-[500px] overflow-hidden ">
                         <Marquee
-                            pauseOnHover
                             vertical
+                            pauseOnHover
                             className="[--duration:20s]"
                         >
-                            {images.map((image, index) => (
+                            {aboutImage.map((image, index) => (
                                 <MarqueImage
                                     key={index}
                                     src={image.src}

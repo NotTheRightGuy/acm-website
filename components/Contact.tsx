@@ -28,10 +28,10 @@ export default function Contact() {
                 className="flex items-center flex-col pb-12 md:pb-20 mt-20 md:mt-36 px-4 md:px-0"
                 id="contact"
             >
-                <h3 className="font-semibold text-2xl text-[#555]">
+                <h3 className="font-semibold text-xl lg:text-2xl text-[#555]">
                     Get in Touch
                 </h3>
-                <h1 className="font-bold font-fami text-4xl mt-1">
+                <h1 className="font-bold font-fami lg:text-4xl text-3xl mt-1">
                     Contact Us
                 </h1>
 
@@ -114,9 +114,9 @@ export default function Contact() {
 
                     <button
                         type="submit"
-                        className="w-full bg-blue-500 text-white py-3 rounded-lg font-medium
-                                 transform transition-all duration-300 hover:bg-blue-600 
-                                 active:scale-95 hover:shadow-lg"
+                        className="w-full font-semibold border-dashed border-blue-500 border-2 py-3 rounded-lg
+                                 transform transition-all duration-300  
+                                 hover:scale-[102%]"
                     >
                         Send Message
                     </button>

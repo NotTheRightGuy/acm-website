@@ -9,7 +9,7 @@ const MemberCard = ({ name, role, image, socialLinks }: any) => {
                 <img
                     src={image}
                     alt={name}
-                    className="w-48 h-48 rounded-full border-4 border-blue-500/20 p-1 transition-all duration-300 group-hover:border-blue-500"
+                    className="lg:w-48 lg:h-48 w-32 h-32 rounded-full border-4 border-blue-500/20 p-1 transition-all duration-300 group-hover:border-blue-500"
                 />
             </div>
             <h3 className="mt-4 text-xl font-bold">{name}</h3>
@@ -54,13 +54,13 @@ export default function Team() {
     return (
         <Container>
             <div
-                className="flex items-center flex-col pb-12 md:pb-20 px-4 md:px-0"
+                className="flex items-center flex-col pb-12 md:pb-20 px-4 md:px-0 lg:mt-0"
                 id="team"
             >
                 <h3 className="font-semibold text-xl md:text-2xl text-[#555] text-center">
                     Our Team
                 </h3>
-                <h1 className="font-bold font-fami text-3xl md:text-4xl mt-1 text-center">
+                <h1 className="font-bold font-fami text-2xl md:text-4xl mt-1 text-center">
                     Meet The Core Team
                 </h1>
                 <div className="mt-12 md:mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-x-8 md:gap-y-16">

@@ -20,10 +20,10 @@ export default function Home() {
             <section className="h-full flex flex-col">
                 <Initiatives />
             </section>
-            <section className="h-full flex flex-col">
+            <section className="flex flex-col">
                 <Testimonials />
             </section>
-            <section className="h-full flex flex-col">
+            <section className="flex flex-col">
                 <Team />
             </section>
             <section className="h-full flex flex-col">

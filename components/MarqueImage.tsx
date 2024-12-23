@@ -8,7 +8,7 @@ export default function MarqueImage({
     alt: string;
 }) {
     return (
-        <div className=" h-full w-full">
+        <div className=" h-full w-full border-dashed border-2 border-blue-500">
             <img
                 src={src}
                 alt={alt}

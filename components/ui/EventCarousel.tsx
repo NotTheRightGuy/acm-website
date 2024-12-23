@@ -24,7 +24,7 @@ export default function EventCarousel({ events }: EventCarouselProps) {
     };
 
     return (
-        <div className="relative w-full h-[500px] overflow-hidden">
+        <div className="relative w-full h-[700px] lg:h-[500px] overflow-hidden">
             <AnimatePresence initial={false} custom={currentIndex}>
                 <EventCard
                     key={currentIndex}
@@ -35,7 +35,7 @@ export default function EventCarousel({ events }: EventCarouselProps) {
 
             <button
                 onClick={prevEvent}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md"
+                className="absolute left-4 bottom-4 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md"
                 aria-label="Previous event"
             >
                 <ChevronLeft className="w-6 h-6" />
@@ -43,7 +43,7 @@ export default function EventCarousel({ events }: EventCarouselProps) {
 
             <button
                 onClick={nextEvent}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md"
+                className="absolute right-4 bottom-4 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md"
                 aria-label="Next event"
             >
                 <ChevronRight className="w-6 h-6" />

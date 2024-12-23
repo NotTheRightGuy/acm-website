@@ -1,15 +1,15 @@
 const teamMembers = [
     {
-        name: "Dr. Vijay Kumar",
-        role: "Faculty Advisor",
+        name: "Janmejay Chatterjee",
+        role: "ACM Student Chair",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=DrVijayKumar",
         socialLinks: {
             linkedin: "https://linkedin.com/in/vijaykumar",
         },
     },
     {
-        name: "Aditya Sharma",
-        role: "Chairperson",
+        name: "Devvrat Singh Rathod",
+        role: "ACM Student Vice Char",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=AdityaSharma",
         socialLinks: {
             github: "https://github.com/aditya",
@@ -17,7 +17,7 @@ const teamMembers = [
         },
     },
     {
-        name: "Riya Patel",
+        name: "Paras Shah",
         role: "Vice Chairperson",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=RiyaPatel",
         socialLinks: {
@@ -26,7 +26,7 @@ const teamMembers = [
         },
     },
     {
-        name: "Arjun Mehta",
+        name: "Shrey Shah",
         role: "Technical Head",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=ArjunMehta",
         socialLinks: {
@@ -35,7 +35,7 @@ const teamMembers = [
         },
     },
     {
-        name: "Priya Singh",
+        name: "Dev Sanghavi",
         role: "Event Coordinator",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=PriyaSingh",
         socialLinks: {
@@ -44,7 +44,7 @@ const teamMembers = [
         },
     },
     {
-        name: "Dev Patel",
+        name: "Harshita Bhambhani",
         role: "Web Master",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=DevPatel",
         socialLinks: {
@@ -53,7 +53,7 @@ const teamMembers = [
         },
     },
     {
-        name: "Ananya Roy",
+        name: "Nidhi Bolia",
         role: "Content Lead",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=AnanyaRoy",
         socialLinks: {
@@ -62,7 +62,25 @@ const teamMembers = [
         },
     },
     {
-        name: "Rohan Verma",
+        name: "Khushi Bansal",
+        role: "Design Head",
+        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=RohanVerma",
+        socialLinks: {
+            github: "https://github.com/rohan",
+            linkedin: "https://linkedin.com/in/rohan",
+        },
+    },
+    {
+        name: "Ananya Sanghavi",
+        role: "Design Head",
+        image: "https://api.dicebear.com/7.x/avataaars/svg?seed=RohanVerma",
+        socialLinks: {
+            github: "https://github.com/rohan",
+            linkedin: "https://linkedin.com/in/rohan",
+        },
+    },
+    {
+        name: "Vidhi Patel",
         role: "Design Head",
         image: "https://api.dicebear.com/7.x/avataaars/svg?seed=RohanVerma",
         socialLinks: {

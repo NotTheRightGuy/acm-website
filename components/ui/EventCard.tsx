@@ -26,7 +26,7 @@ export default function EventCard({ event, custom }: EventCardProps) {
 
     return (
         <motion.div
-            className="absolute top-0 left-0 w-full h-full flex"
+            className="absolute top-0 left-0 w-full h-full flex flex-col lg:flex-row"
             custom={custom}
             variants={variants}
             initial="enter"
@@ -34,7 +34,7 @@ export default function EventCard({ event, custom }: EventCardProps) {
             exit="exit"
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
         >
-            <div className="w-1/2 h-full relative">
+            <div className="w-full lg:w-1/2 h-[300px] lg:h-full relative border-blue-500 border-dashed border-2">
                 <Image
                     src={event.imageUrl}
                     alt={event.title}
@@ -42,21 +42,23 @@ export default function EventCard({ event, custom }: EventCardProps) {
                     objectFit="cover"
                 />
             </div>
-            <div className="w-1/2 h-full bg-white p-8 flex flex-col justify-center">
-                <h2 className="text-4xl font-bold mb-2 font-fami">
+            <div className="w-full lg:w-1/2 h-full bg-white p-4 lg:p-8 flex flex-col justify-center">
+                <h2 className="text-2xl lg:text-4xl font-bold mb-2 font-fami">
                     {event.title}
                 </h2>
-                <p className="text-lg text-gray-500 mb-4">
+                <p className="text-base lg:text-lg text-gray-500 mb-4">
                     {event.description}
                 </p>
-                <div className="text-gray-800">{event.body}</div>
-                <div className="mt-10 text-sm text-[#333] flex items-center gap-8">
+                <div className="text-gray-800 text-sm lg:text-base">
+                    {event.body}
+                </div>
+                <div className="mt-6 lg:mt-10 text-sm text-[#333] flex flex-col lg:flex-row items-start lg:items-center gap-4 lg:gap-8">
                     <div>
-                        <Calendar className="w-5 h-5 inline-block mr-2" />
+                        <Calendar className="w-4 h-4 lg:w-5 lg:h-5 inline-block mr-2" />
                         <span>{event.date}</span>
                     </div>
                     <div>
-                        <Users className="w-5 h-5 inline-block mr-2" />
+                        <Users className="w-4 h-4 lg:w-5 lg:h-5 inline-block mr-2" />
                         <span>{event.attendees} attendees</span>
                     </div>
                 </div>
