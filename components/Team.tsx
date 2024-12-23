@@ -1,5 +1,5 @@
 import Container from "./Container";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaGoogle } from "react-icons/fa";
 import teamMembers from "@/constants/team";
 
 const MemberCard = ({
@@ -12,7 +12,7 @@ const MemberCard = ({
     role: string;
     image: string;
     socialLinks: {
-        github?: string;
+        gmail?: string;
         linkedin?: string;
         twitter?: string;
     };
@@ -29,14 +29,14 @@ const MemberCard = ({
             <h3 className="mt-4 text-xl font-bold">{name}</h3>
             <p className="text-gray-600 font-medium">{role}</p>
             <div className="flex gap-4 mt-3">
-                {socialLinks.github && (
+                {socialLinks.gmail && (
                     <a
-                        href={socialLinks.github}
+                        href={socialLinks.gmail}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-600 hover:text-blue-500 transition-colors"
                     >
-                        <FaGithub size={20} />
+                        <FaGoogle size={20} />
                     </a>
                 )}
                 {socialLinks.linkedin && (
