@@ -23,7 +23,7 @@ const MemberCard = ({
                 <img
                     src={image}
                     alt={name}
-                    className="lg:w-48 lg:h-48 w-32 h-32 rounded-full border-4 border-blue-500/20 p-1 transition-all duration-300 group-hover:border-blue-500"
+                    className="lg:w-48 lg:h-48 w-32 h-32 rounded-full border-4 border-blue-500/20 p-1 transition-all duration-300 group-hover:border-blue-500 object-cover object-center"
                 />
             </div>
             <h3 className="mt-4 text-xl font-bold">{name}</h3>
