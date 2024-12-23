@@ -1,0 +1,78 @@
+import { Event } from "@/types/event";
+
+const events: Event[] = [
+    {
+        id: "1",
+        title: "ACM-W Chapter Inauguration",
+        description: "Launch of Adani University's ACM-W Student Chapter",
+        body: "The Adani ACM-W Student Chapter was inaugurated with special guests including Dr. Heena Timani, chairperson of the ACM-W India committee. The event featured competitions, expert talks, and the formation of the AWS Academy and Students Programming Development Club.",
+        imageUrl: "/acm-w-inauguration.jpg",
+        attendees: "200",
+        date: "April 3, 2023",
+    },
+    {
+        id: "2",
+        title: "Web Development Workshop",
+        description: "Three-day comprehensive workshop on web fundamentals",
+        body: "A three-day workshop covering HTML, CSS Flexbox, and JavaScript fundamentals. Led by students Janmejay Chatterjee and Madhur Prajapati, the sessions provided hands-on experience in creating modern web applications.",
+        imageUrl: "/web-dev-workshop.jpg",
+        attendees: "150",
+        date: "May 5-26, 2023",
+    },
+    {
+        id: "3",
+        title: "Career Options in India After Engineering",
+        description: "Expert session on post-engineering career paths",
+        body: "Mr. Alok Shah, an expert with 16 published books, conducted a comprehensive session on various career options available to engineering graduates, including higher education, competitive exams, and entrepreneurship opportunities.",
+        imageUrl: "/career-options.jpg",
+        attendees: "120",
+        date: "May 9, 2023",
+    },
+    {
+        id: "4",
+        title: "Data Science Expert Talk",
+        description: "IBM expert shares insights on data science thinking",
+        body: "Mr. Ashish Patel from IBM delivered an enlightening talk on data science mindset and real-world applications, covering analytical thinking, problem-solving approaches, and practical industry applications.",
+        imageUrl: "/data-science-talk.jpg",
+        attendees: "100",
+        date: "June 9, 2023",
+    },
+    {
+        id: "5",
+        title: "Data Structures and Algorithms Workshop",
+        description: "Online DSA workshop with competitive programming focus",
+        body: "Led by Janmejay Chatterjee, this workshop covered C++ basics, data structures, and competitive programming strategies. Included hands-on exercises from platforms like Codeforces and LeetCode.",
+        imageUrl: "/dsa-workshop.jpg",
+        attendees: "80",
+        date: "October 13, 2023",
+    },
+    {
+        id: "6",
+        title: "Backend Development Workshop Series",
+        description: "Four-session deep dive into backend development",
+        body: "Comprehensive workshop series covering JavaScript basics, APIs, Node.js, and Express. Sessions focused on practical implementation and hands-on coding experience.",
+        imageUrl: "/backend-workshop.jpg",
+        attendees: "70",
+        date: "January 12-20, 2024",
+    },
+    {
+        id: "7",
+        title: "GitHub Copilot Workshop",
+        description: "Two-day practical workshop on GitHub and Copilot",
+        body: "Interactive workshop teaching students about GitHub, GitHub Copilot installation, and practical applications. Featured hands-on exercises and creative coding competitions.",
+        imageUrl: "/github-workshop.jpg",
+        attendees: "120",
+        date: "February 19-20, 2024",
+    },
+    {
+        id: "8",
+        title: "VS Code Workshop",
+        description: "Comprehensive guide to Visual Studio Code",
+        body: "Conducted by Nirav Mehta, this workshop covered VS Code setup, extensions, debugging features, and practical coding demonstrations including building a small website.",
+        imageUrl: "/vscode-workshop.jpg",
+        attendees: "90",
+        date: "March 9, 2024",
+    },
+];
+
+export default events;
