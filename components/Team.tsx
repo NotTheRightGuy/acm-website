@@ -2,7 +2,21 @@ import Container from "./Container";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import teamMembers from "@/constants/team";
 
-const MemberCard = ({ name, role, image, socialLinks }: any) => {
+const MemberCard = ({
+    name,
+    role,
+    image,
+    socialLinks,
+}: {
+    name: string;
+    role: string;
+    image: string;
+    socialLinks: {
+        github?: string;
+        linkedin?: string;
+        twitter?: string;
+    };
+}) => {
     return (
         <div className="flex flex-col items-center group">
             <div className="relative">
