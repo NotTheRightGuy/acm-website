@@ -49,7 +49,7 @@ export default function Testimonials() {
     return (
         <Container>
             <div
-                className="flex items-center flex-col lg:pb-20 lg:mt-36 mt-60"
+                className="flex items-center flex-col lg:pb-20 lg:mt-80 mt-80"
                 id="testimonials"
             >
                 <h3 className="font-semibold lg:text-2xl text-[#555] text-xl">

@@ -68,7 +68,7 @@ export default function Team() {
     return (
         <Container>
             <div
-                className="flex items-center flex-col pb-12 md:pb-20 px-4 md:px-0 lg:mt-0"
+                className="flex items-center flex-col pb-12 md:pb-20 px-4 md:px-0 lg:-mt-20"
                 id="team"
             >
                 <h3 className="font-semibold text-xl md:text-2xl text-[#555] text-center">

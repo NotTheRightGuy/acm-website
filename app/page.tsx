@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
     return (
-        <div className="h-full relative">
+        <div className="h-full relative overflow-x-hidden">
             <section className="h-full flex flex-col pt-16">
                 <Navbar />
                 <Hero />

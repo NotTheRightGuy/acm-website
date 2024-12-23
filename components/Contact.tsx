@@ -25,7 +25,7 @@ export default function Contact() {
     return (
         <Container>
             <div
-                className="flex items-center flex-col pb-12 md:pb-20 mt-20 md:mt-36 px-4 md:px-0"
+                className="flex items-center flex-col pb-12 md:pb-20 -mt-2 md:mt-2 px-4 md:px-0"
                 id="contact"
             >
                 <h3 className="font-semibold text-xl lg:text-2xl text-[#555]">

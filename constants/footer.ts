@@ -6,17 +6,17 @@ export const footerConfig = {
         socialLinks: [
             {
                 name: "LinkedIn",
-                url: "https://linkedin.com/company/adani-acm",
+                url: "https://www.linkedin.com/in/adani-acm-w-student-chapter/",
                 icon: "FaLinkedin",
             },
             {
                 name: "Twitter",
-                url: "https://twitter.com/adani_acm",
+                url: "https://x.com/adaniacm",
                 icon: "FaTwitter",
             },
             {
                 name: "Instagram",
-                url: "https://instagram.com/adani_acm",
+                url: "https://www.instagram.com/adaniacm?igsh=MmRpbDdwZ2Vrdndh",
                 icon: "FaInstagram",
             },
         ],
@@ -28,8 +28,8 @@ export const footerConfig = {
         { name: "Contact", href: "#contact" },
     ],
     contact: {
-        email: "acm.chapter@adaniuniversity.ac.in",
-        phone: "+91 79 25556444",
+        email: "adaniacm@gmail.com",
+        phone: "+91 83579 93000",
         location: "Adani University, Shantigram, Ahmedabad, Gujarat 382421",
     },
     newsletter: {
