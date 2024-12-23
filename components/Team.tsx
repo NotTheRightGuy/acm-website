@@ -1,5 +1,5 @@
 import Container from "./Container";
-import { FaGithub, FaLinkedin, FaTwitter, FaGoogle } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaGoogle } from "react-icons/fa";
 import teamMembers from "@/constants/team";
 
 const MemberCard = ({
